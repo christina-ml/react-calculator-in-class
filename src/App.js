@@ -9,6 +9,10 @@ class App extends Component {
     }
   }
 
+  handleButtonClick=()=>{
+    console.log("Trigger")
+  }
+
   render(){
     let keypadArr = [
       { display: "+", value: "plus", type: "operation" },
@@ -31,11 +35,12 @@ class App extends Component {
       { display: "0", value: 1, type: "number" },
       { display: "=", value: "equals", type: "operation" },
     ];
+  
     
-    let buttonArr = keypadArr.map((button) => {
-      return <div className="calc-button">{button.display}</div>;
+    let buttonArr = keypadArr.map((button, index) => {
+      return <div key={index} className="calc-button" onClick={this.handleButtonClick}>{button.display}</div>;
     });
-    
+
     return (
     <div id="calc-container">
       <div id="display">
@@ -62,4 +67,9 @@ export default App;
 - CSS: add parent of calc-container, and the display
 
 - Now we need state. Turn App() into a class component. To add state.
+- Adding numDisplay to state. Switched static value with this.state.numDisplay to be dynamic.
+
+  Each one of these buttons is going to have one event.
+- make `handleButtonClick` so when you click on a button, it triggers an event. onClick event.
+- add a key (with "input") to the div, using the .map()
 */
