@@ -2,6 +2,13 @@ import { Component } from "react";
 import "./App.css";
 
 class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      numDisplay: 0,
+    }
+  }
+
   render(){
     let keypadArr = [
       { display: "+", value: "plus", type: "operation" },
@@ -32,7 +39,7 @@ class App extends Component {
     return (
     <div id="calc-container">
       <div id="display">
-        {0}
+        {this.state.numDisplay}
       </div>
       <div id="keypad-container"> 
         { buttonArr }
