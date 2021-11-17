@@ -4,7 +4,7 @@ function App() {
   let keypadArr = [
     { display: "+", value: "plus", type: "operation" },
     { display: "-", value: "minus", type: "operation" },
-    { display: "*", value: "multiply", type: "operation" },
+    { display: "x", value: "multiply", type: "operation" },
     { display: "/", value: "divide", type: "operation" },
     { display: "7", value: 7, type: "number" },
     { display: "8", value: 8, type: "number" },
@@ -49,4 +49,5 @@ export default App;
 - can go back later, delete the spaces, and re-arrange a different way.
 - add styling to the actual buttons themselves.
 - Make calc-container, and a div inside for the `display`
+- CSS: add parent of calc-container, and the display
 */
