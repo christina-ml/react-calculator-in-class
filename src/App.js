@@ -29,6 +29,9 @@ function App() {
 
   return (
     <div id="calc-container">
+      <div id="display">
+        {0}
+      </div>
       <div id="keypad-container"> 
         { buttonArr }
       </div>
@@ -45,4 +48,5 @@ export default App;
 - re-arrange the button objects. Can even add a button that's a space in between the buttons. OR grid areas (more complicated).
 - can go back later, delete the spaces, and re-arrange a different way.
 - add styling to the actual buttons themselves.
+- Make calc-container, and a div inside for the `display`
 */

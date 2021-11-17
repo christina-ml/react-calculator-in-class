@@ -1,9 +1,12 @@
+#calc-container {
+  width: 400px;
+  margin: 50px auto;
+}
+
 #keypad-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px;
-  width: 400px;
-  margin: 50px auto;
 }
 
 .calc-button {
