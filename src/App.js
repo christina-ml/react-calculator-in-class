@@ -23,7 +23,11 @@ function App() {
     return <div className="calc-button">{button.display}</div>;
   });
 
-  return <div>{buttonArr}</div>;
+  return (
+    <div id="keypad-container"> 
+      {buttonArr}
+    </div>
+    );
 }
 
 export default App;
