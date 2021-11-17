@@ -28,8 +28,10 @@ function App() {
   });
 
   return (
-    <div id="keypad-container"> 
-      {buttonArr}
+    <div id="calc-container">
+      <div id="keypad-container"> 
+        { buttonArr }
+      </div>
     </div>
     );
 }
