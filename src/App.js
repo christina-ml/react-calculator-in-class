@@ -52,13 +52,15 @@ class App extends Component {
 
     let buttonArr = keypadArr.map((button, index) => {
       return (
-      <div key={index} 
-      className="calc-button"
-       onClick={()=>this.handleButtonClick(button)}>
-         {button.display}
-      </div>
-      )}
-  }
+      <div 
+        key={index}
+        className="calc-button"
+        onClick={()=>this.handleButtonClick(button)}
+        >
+          {button.display}
+        </div>
+      )
+    })
 
     return (
       <div id="calc-container">
@@ -70,6 +72,7 @@ class App extends Component {
         </div>
       </div>
     )
+  }
 }
 
 export default App;
